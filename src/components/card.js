@@ -1,12 +1,5 @@
 import { useState } from "react";
 import './card.css'
-import img from './logo512.png'
-
-/* function importAll(r) {
-    let images = {};
-    r.keys().map((item, index) => {images[item.replace('./','')] = r(item);});
-    return images
-} */
 
 function importAll(r){
     return r.keys().map(r);
@@ -14,8 +7,7 @@ function importAll(r){
 
 const images = importAll(require.context('./img', false, /\.(png||jpg||gif)$/))
 
-//const images = importAll(require.context('./img', false, /\.(gif)$/))
-console.log(images)
+//console.log(images)
 
 export default function Card (){
     let cards = []
@@ -23,28 +15,21 @@ export default function Card (){
         //console.log('yeet')
         cards.push(i)        
     }
+    
     //console.log(cards)
     cards.map((object => {
     }))
         return(
             <div className="cards">
                 {images.map((object => 
-                <div className="card">
+                <div className="card" key={object}>
                     
                         <img src={object}></img>
-                    <h4>{(object)} </h4>
-                    
-                    
+                    <h4>{object[14] + object[15]} </h4>
+                                        
                 </div>
             ))}
             </div>
-
-            
-            
-            
-            
-            
-        )
-        
+        )      
     }
     

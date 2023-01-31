@@ -17,6 +17,11 @@
     align-items: center;
     border-radius: 1em;
 }
+.card:hover{
+    box-shadow: 0 0 1em 0.4em rgb(229, 221, 147);
+    transition-duration: 200ms;
+    transform:scale(105%)
+}
 
 .container{
     padding:0.5em;

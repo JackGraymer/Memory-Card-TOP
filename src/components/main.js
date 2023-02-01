@@ -10,12 +10,11 @@ const images = importAll(require.context('./img', false, /\.(png||jpg||gif)$/))
 const deck = images.map(img => ({id:img, clicked:false}))
 
 export default function Main () {
-    const[score, setScore] = useState([0,1,2,3,4,5])
+    const[score, setScore] = useState(0)
     const [best, setBest] = useState(score)
 
     const [state, setState] = useState(deck)
     console.log(state)
-    console.log(score)
 
     let shuffled = (e) => {
         let mix = [...state]
@@ -26,9 +25,9 @@ export default function Main () {
     }
 
     let changescore =() =>{
-        /* setScore(score.sort(()=> Math.random() -0.5))
-        setScore([...score,score[1]+1]) */
-        console.log(score)
+        
+        setScore(score+1) 
+        
     }
 
 

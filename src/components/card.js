@@ -6,16 +6,14 @@ export default function Card (props){
     for(let i=0; i<12; i++){
         cards.push(i)        
     }
-
-    props.state.map((object => {
-    }))
+        
         return(
             <div className="cards">
                 {props.state.map((object => 
-                <div className="card" key={object.id} onClick={props.shuffle}>
+                <div className="card" id={object.id} clicked={object.clicked} key={object.id} onClick={props.shuffle}>
                     
                         <img src={object.id} alt='food'></img>
-                    {<h4>{object.id[14] + object.id[15]} </h4>}
+                    {<h4>{object.id.slice(14, -25)} </h4>}
                                         
                 </div>
             ))}

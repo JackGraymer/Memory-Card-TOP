@@ -14,7 +14,6 @@ export default function Main () {
     const [best, setBest] = useState(score)
 
     const [state, setState] = useState(deck)
-    console.log(state)
 
     let shuffled = (e) => {
         let mix = [...state]
@@ -22,17 +21,38 @@ export default function Main () {
         mix = mix.sort(()=> Math.random() -0.5)
         mix = mix.sort(()=> Math.random() -0.5)
         setState(mix);
+        
+        (function changescore () {
+            state.map((object) => {
+                if(object.id == e.currentTarget.id && !object.clicked){
+                    setScore((state.find(({id})=> id == object.id )).clicked = true)
+                    setScore(score+1)
+                    return
+                }else if(object.id == e.currentTarget.id && object.clicked){
+                    setScore(0)
+                    mix.map((element) => {
+                        element.clicked= false
+                    });
+                }
+                
+            })            
+        })()
     }
 
-    let changescore =() =>{
-        
-        setScore(score+1) 
-        
-    }
-
+    useEffect(()=> {
+        if(best==12){
+            alert('Finish!');
+            window.location.reload()
+        }
+        if(score<best){
+            return
+        }
+    
+        setBest(score)
+    },[score,best])
 
     return(
-        <div className='main' onClick={() =>changescore()}>
+        <div className='main' /* onClick={changescore} */>
             <div className='top'>
                 <h2>Score: {score}</h2>
                 <h2>Best Score: {best}</h2>

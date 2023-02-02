@@ -10,8 +10,7 @@ export default function Card (props){
         return(
             <div className="cards">
                 {props.state.map((object => 
-                <div className="card" id={object.id} clicked={object.clicked} key={object.id} onClick={props.shuffle}>
-                    
+                <div className="card" id={object.id} key={object.id} onClick={props.shuffle}>
                         <img src={object.id} alt='food'></img>
                     {<h4>{object.id.slice(14, -25)} </h4>}
                                         

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Memory-Card-TOP/static/css/main.d29a36e2.css",
-    "main.js": "/Memory-Card-TOP/static/js/main.0d790eb3.js",
+    "main.js": "/Memory-Card-TOP/static/js/main.5bd1e624.js",
     "static/js/787.d6a8b40f.chunk.js": "/Memory-Card-TOP/static/js/787.d6a8b40f.chunk.js",
     "static/media/Bacon and Eggs.gif": "/Memory-Card-TOP/static/media/Bacon and Eggs.11f2689f8d30e7e98e4d.gif",
     "static/media/Okonomiyaki.gif": "/Memory-Card-TOP/static/media/Okonomiyaki.caecea90d3665460a237.gif",
@@ -15,14 +15,13 @@
     "static/media/Pizza.gif": "/Memory-Card-TOP/static/media/Pizza.fae9dda55ed9d46bc9db.gif",
     "static/media/Skewer.gif": "/Memory-Card-TOP/static/media/Skewer.96c49323e65520e38cb2.gif",
     "static/media/Sushi.gif": "/Memory-Card-TOP/static/media/Sushi.536d5114ff12598dccf7.gif",
-    "static/media/logo.svg": "/Memory-Card-TOP/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Memory-Card-TOP/index.html",
     "main.d29a36e2.css.map": "/Memory-Card-TOP/static/css/main.d29a36e2.css.map",
-    "main.0d790eb3.js.map": "/Memory-Card-TOP/static/js/main.0d790eb3.js.map",
+    "main.5bd1e624.js.map": "/Memory-Card-TOP/static/js/main.5bd1e624.js.map",
     "787.d6a8b40f.chunk.js.map": "/Memory-Card-TOP/static/js/787.d6a8b40f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d29a36e2.css",
-    "static/js/main.0d790eb3.js"
+    "static/js/main.5bd1e624.js"
   ]
 }
